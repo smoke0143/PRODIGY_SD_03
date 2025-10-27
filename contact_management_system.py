@@ -28,7 +28,7 @@ def add_contact(contacts):
 # View all contacts
 def view_contacts(contacts):
     if not contacts:
-        print("\n📭 No contacts found!\n")
+        print("\n No contacts found!\n")
         return
     print("\n Contact List:")
     for name, info in contacts.items():
@@ -58,7 +58,7 @@ def delete_contact(contacts):
         save_contacts(contacts)
         print(f"\n Contact '{name}' deleted successfully!\n")
     else:
-        print("\n❌ Contact not found!\n")
+        print("\n Contact not found!\n")
 
 # Main program loop
 def main():
@@ -83,10 +83,11 @@ def main():
         elif choice == "4":
             delete_contact(contacts)
         elif choice == "5":
-            print("\n👋 Exiting... Goodbye!")
+            print("\n Exiting... Goodbye!")
             break
         else:
           print("\n Invalid choice. Please try again!\n")
 
 if __name__ == "__main__":
     main()
+
